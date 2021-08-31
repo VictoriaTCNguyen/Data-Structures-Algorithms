@@ -1,0 +1,42 @@
+// Running of program for lab 4
+// mode (user's preference) is '1', i.e. $a.out 1
+// 1==preorder
+// 2==postorder
+// 3==inorder
+// 4==node height
+ryan-st@bolt $ ls
+BST.H         height_color.dot   main.cc     preorder_color.dot
+dotguide.pdf  inorder_color.dot  output.dot  simple_bst.dot*
+~/cs014/labs/lab4
+ryan-st@bolt $ g++ -Wall -Werror -W *.cc
+~/cs014/labs/lab4
+ryan-st@bolt $ a.out 1
+insert 4
+insert 2
+insert 6
+display
+  6 
+ 4 
+  2 
+insert 1
+insert 3
+display
+  6 
+ 4 
+   3 
+  2 
+   1 
+insert 5
+insert 7
+display
+   7 
+  6 
+   5 
+ 4 
+   3 
+  2 
+   1 
+end
+Good bye!
+~/cs014/labs/lab4
+ryan-st@bolt $ 
