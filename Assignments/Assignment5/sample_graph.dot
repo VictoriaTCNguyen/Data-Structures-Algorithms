@@ -1,0 +1,42 @@
+/* Digraph 
+ * assn5 
+ * graph.dot
+ * cs10c_sum21
+ */
+
+digraph G {
+
+  rankdir="LR";
+  
+  // nodes
+  Lodi;
+  Nile;
+  Mondavi;
+  Rivoli;
+  Pyramids;
+  Zurich;
+  Marengo;
+  Friedland;
+
+  // edges
+  Nile->Rivoli;
+  Marengo->Rivoli;
+  Pyramids->Mondavi;
+  Pyramids->Lodi
+  Friedland->Mondavi;
+  Mondavi->Lodi;
+  Lodi->Mondavi;
+  Nile->Marengo;
+  Mondavi->Nile;
+  Lodi->Rivoli;
+  Zurich->Nile;
+  Rivoli->Nile;
+  Mondavi->Zurich;
+  Lodi->Pyramids;
+  Pyramids->Marengo;
+  Zurich->Pyramids;
+  Zurich->Lodi;
+  Friedland->Nile;
+  Mondavi->Friedland;
+  Friedland->Marengo;
+}

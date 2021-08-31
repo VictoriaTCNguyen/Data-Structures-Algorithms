@@ -1,0 +1,39 @@
+Copy and paste the following into https://dreampuf.github.io/GraphvizOnline/
+digraph G
+{
+
+	rankdir="LR";
+
+	// nodes 
+	// City_name(Shortest Path from Origin)
+	Lodi[label="Lodi(0)"]
+	Nile[label="Nile(2)"]
+	Mondavi[label="Mondavi(1)"]
+	Rivoli[label="Rivoli(1)"]
+	Pyramids[label="Pyramids(1)"]
+	Zurich[label="Zurich(2)"]
+	Marengo[label="Marengo(2)"]
+	Friedland[label="Friedland(2)"]
+
+	 //edges, shortest distances shown in red.
+	 Lodi -> Mondavi [style=bold,color=orangered4];
+	 Lodi -> Rivoli [style=bold,color=orangered4];
+	 Lodi -> Pyramids [style=bold,color=orangered4];
+	 Nile -> Rivoli [style=dashed,arrowhead=curve,color=dimgray];
+	 Nile -> Marengo [style=dashed,arrowhead=curve,color=dimgray];
+	 Mondavi -> Lodi [style=dashed,arrowhead=curve,color=dimgray];
+	 Mondavi -> Nile [style=bold,color=orangered4];
+	 Mondavi -> Zurich [style=bold,color=orangered4];
+	 Mondavi -> Friedland [style=bold,color=orangered4];
+	 Rivoli -> Nile [style=dashed,arrowhead=curve,color=dimgray];
+	 Pyramids -> Mondavi [style=dashed,arrowhead=curve,color=dimgray];
+	 Pyramids -> Lodi [style=dashed,arrowhead=curve,color=dimgray];
+	 Pyramids -> Marengo [style=bold,color=orangered4];
+	 Zurich -> Nile [style=dashed,arrowhead=curve,color=dimgray];
+	 Zurich -> Pyramids [style=dashed,arrowhead=curve,color=dimgray];
+	 Zurich -> Lodi [style=dashed,arrowhead=curve,color=dimgray];
+	 Marengo -> Rivoli [style=dashed,arrowhead=curve,color=dimgray];
+	 Friedland -> Mondavi [style=dashed,arrowhead=curve,color=dimgray];
+	 Friedland -> Nile [style=dashed,arrowhead=curve,color=dimgray];
+	 Friedland -> Marengo [style=dashed,arrowhead=curve,color=dimgray];
+}
