@@ -1,0 +1,14 @@
+//dotty type: height
+digraph G {
+97 [color = lightblue, style = filled, label="key=3, h=1"];
+97 [color = lightblue, style = filled, label="key=20, h=-1"];
+100 [color = lightblue, style = filled, label="key=55, h=0"];
+99 [color = lightblue, style = filled, label="key=5, h=2"];
+
+
+//edges
+99 -> 97;
+99 -> 100;
+100 -> 97;
+
+}
